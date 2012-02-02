@@ -100,7 +100,13 @@ public class Main extends JFrame {
 			}
 		});
 	}
-
+	
+	
+	/*
+	 * É importante que o método seja executado dentro de uma thread para que a GUI 
+	 * seja atualizada adequadamente, senão, a tela só será renderizada no final do 
+	 * processo 
+	 */
 	public void executeAction() {
 		Runnable runnable = new Runnable() {
 
